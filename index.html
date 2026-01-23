@@ -1,145 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jashodha Borana | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jashodha Borana | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
-    <nav>
-        <div class="logo">My Portfolio</div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
 
-    <div class="hero">
-        <img src="myphoto.jpg" alt="Manisha Borana" class="profile-pic">
-
-        <p>
-    I am currently pursuing my studies at
-    <strong>Godavari Global University (GGU)</strong> and working as a
-    <strong>Full Stack Web Development Intern</strong> at
-    <strong>Future Interns</strong>.
-</p>
-
-        <div class="cta-container">
-            <a href="#contact" class="cta-button">Contact Me</a>
-            <a href="https://www.linkedin.com/in/jashodha-borana-7a035a322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"class="cta-button">LinkedIn</a>
-    <a href="https://github.com/Jashodhaborana09" target="_blank" class="cta-button">GitHub</a>
-
-        </div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero reveal">
+    <img src="myphoto.jpg" alt="Jashodha Borana" class="profile-pic">
+
+    <h1>Jashodha Borana</h1>
+    <p>
+      Student at <strong>Godavari Global University</strong><br>
+      Full Stack Web Development Intern at <strong>Future Interns</strong>
+    </p>
+
+    <div class="cta-container">
+      <a href="#contact" class="cta-button">Contact Me</a>
+      <a href="https://www.linkedin.com/in/jashodha-borana-7a035a322" target="_blank" class="cta-button outline">LinkedIn</a>
+      <a href="https://github.com/Jashodhaborana09" target="_blank" class="cta-button outline">GitHub</a>
+    </div>
+  </div>
 </header>
 
 <main>
 
-<section id="about" class="alternate-section reveal">
-    <h2>About Me</h2>
-
-    <p>
-        My name is <strong>Jashodha Borana</strong>. I am a student at
-        <strong>Godavari Global University (GGU)</strong> and currently working as a
-        <strong>Full Stack Web Development Intern</strong> at
-        <strong>Future Interns</strong>. I am passionate about web development and
-        interested in Artificial Intelligence and Machine Learning.
-    </p>
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate web developer currently pursuing my studies at
+    <strong>Godavari Global University</strong>.  
+    As a <strong>Full Stack Web Development Intern</strong> at
+    <strong>Future Interns</strong>, I am gaining hands-on experience in
+    building professional, responsive web applications.
+  </p>
 </section>
 
-    <hr>
-</section>
-<div id="mobile-menu"></div>
-<ul id="nav-links"></ul>
-<button id="darkModeToggle"></button>
-
-<button id="darkModeToggle" class="dark-toggle">🌙</button>
-
-<section id="skills" class="alternate-section">
-    <h2>My Skills</h2>
-    <ul class="skills-list">
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Python Basics</li>
-        <li>Full Stack Web Development</li>
-        <li>Responsive Web Design</li>
-        <li>AI & Machine Learning Fundamentals</li>
-    </ul>
-    <hr>
-</section>
-<section id="internship" class="alternate-section reveal">
-    <h2>Internship Experience</h2>
-    <p>
-        I am currently working as a <strong>Full Stack Web Development Intern</strong> at
-        <strong>Future Interns</strong>. During this internship, I am gaining hands-on
-        experience in building responsive web applications, improving UI design,
-        and understanding real-world development workflows.
-    </p>
-
-    <ul class="skills-list">
-        <li>Frontend Development</li>
-        <li>Backend Basics</li>
-        <li>Real-Time Project Tasks</li>
-        <li>Team Collaboration</li>
-        <li>Problem Solving</li>
-    </ul>
+<section id="skills" class="section light reveal">
+  <h2>My Skills</h2>
+  <ul class="skills-list">
+    <li>HTML & CSS</li>
+    <li>JavaScript</li>
+    <li>Responsive Web Design</li>
+    <li>Python Basics</li>
+    <li>Full Stack Fundamentals</li>
+    <li>AI & ML Basics</li>
+  </ul>
 </section>
 
+<section id="internship" class="section reveal">
+  <h2>Internship Experience</h2>
+  <p>
+    During my internship at <strong>Future Interns</strong>, I work on
+    real-world projects that strengthen my understanding of frontend
+    development, backend basics, and professional workflows.
+  </p>
+</section>
 
-<section id="contact" class="alternate-section">
-    <h2>Contact Me</h2>
-    <p>
-        If you would like to connect, collaborate, or discuss opportunities,
-        feel free to reach out to me.
-    </p>
-
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+<section id="contact" class="section light reveal">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 </main>
 
 <footer>
-    <div class="footer-content">
-        <h3>Connect with Me</h3>
-        <p>Student | Full Stack Developer | AI/ML Enthusiast</p>
-
-        <ul class="footer-links">
-            <li><a href="#">Email</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            
-        </ul>
-    </div>
-    <ul class="footer-links">
-    <li><a href="mailto:okaymanu00@gmail.com">Email</a></li>
-    <li><a href="https://www.linkedin.com/in/jashodha-borana-7a035a322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-    <li><a href="https://github.com/Jashodhaborana09" target="_blank">GitHub</a></li>
-</ul>
-
-
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 Jashodha Borana. All rights reserved.</p>
-    </div>
+  <p>© 2026 Jashodha Borana | All Rights Reserved</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-

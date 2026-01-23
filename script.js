@@ -1,30 +1,43 @@
-// ===== MOBILE MENU =====
-const menu = document.getElementById("mobile-menu");
+/* ===============================
+   Mobile Navigation Toggle
+================================ */
+const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.getElementById("nav-links");
 
-menu.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
 });
 
-// ===== SCROLL REVEAL =====
+/* ===============================
+   Scroll Reveal Animation
+================================ */
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
-    reveals.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+function revealOnScroll() {
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-        if (sectionTop < windowHeight - 100) {
-            section.classList.add("active");
-        }
-    });
-});
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add("active");
+    }
+  });
+}
 
-// ===== DARK MODE =====
-const darkToggle = document.getElementById("darkModeToggle");
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
 
-darkToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    darkToggle.textContent =
-        document.body.classList.contains("dark") ? "☀️" : "🌙";
-});
+/* ===============================
+   Contact Form (Optional Alert)
+================================ */
+const form = document.querySelector(".contact-form");
+
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for your message! I will get back to you soon.");
+    form.reset();
+  });
+}
